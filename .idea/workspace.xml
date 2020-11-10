@@ -1,15 +1,44 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0da7e2bd-efbc-4c2a-9d4e-3b8d68f218db" name="Default Changelist" comment="" />
+    <list default="true" id="0da7e2bd-efbc-4c2a-9d4e-3b8d68f218db" name="Default Changelist" comment="Создала модель Weight, контроллеры и реквест для неё">
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/WeightController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Requests/WeightFormRequest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Models/Weight.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/charts.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2020_11_10_155504_create_weights_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/weights/form.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/weights/index.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/weights/show.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/weightcontrol.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/weightcontrol.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/home.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/welcome.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ComposerSettings" synchronizationState="SYNCHRONIZE">
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
     <execution />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Blade File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -122,18 +151,23 @@
       <path value="$PROJECT_DIR$/vendor/phpdocumentor/reflection-docblock" />
       <path value="$PROJECT_DIR$/vendor/phpdocumentor/type-resolver" />
       <path value="$PROJECT_DIR$/vendor/laravel/ui" />
+      <path value="$PROJECT_DIR$/vendor/infureal/artisan-gui" />
+      <path value="$PROJECT_DIR$/vendor/chartisan/php" />
+      <path value="$PROJECT_DIR$/vendor/consoletvs/charts" />
     </include_path>
   </component>
   <component name="ProjectId" id="1k6LxXHOBpGvJbnwM7mtasDefnj" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
@@ -154,7 +188,7 @@
       <option name="presentableId" value="Default" />
       <updated>1605016341724</updated>
       <workItem from="1605016342731" duration="1633000" />
-      <workItem from="1605018130853" duration="44000" />
+      <workItem from="1605018130853" duration="6482000" />
     </task>
     <servers />
   </component>
@@ -162,23 +196,34 @@
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <ignored-roots>
       <path value="$PROJECT_DIR$" />
     </ignored-roots>
+    <MESSAGE value="Создала модель Weight, контроллеры и реквест для неё" />
+    <option name="LAST_COMMIT_MESSAGE" value="Создала модель Weight, контроллеры и реквест для неё" />
   </component>
   <component name="WindowStateProjectService">
     <state x="834" y="256" key="#Composer" timestamp="1605017030612">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="834" y="256" key="#Composer/0.0.1366.768@0.0.1366.768" timestamp="1605017030612" />
-    <state x="893" y="275" key="Github.ShareDialog" timestamp="1605018001019">
+    <state x="308" y="0" key="CommitChangelistDialog2" timestamp="1605025553012">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="893" y="275" key="Github.ShareDialog/0.0.1366.768@0.0.1366.768" timestamp="1605018001019" />
-    <state x="797" y="75" key="Github.UntrackedFilesDialog" timestamp="1605017710478">
+    <state x="308" y="0" key="CommitChangelistDialog2/0.0.1366.768@0.0.1366.768" timestamp="1605025553012" />
+    <state x="801" y="289" key="ComposerInitDialogKey" timestamp="1605020152691">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="797" y="75" key="Github.UntrackedFilesDialog/0.0.1366.768@0.0.1366.768" timestamp="1605017710478" />
+    <state x="801" y="289" key="ComposerInitDialogKey/0.0.1366.768@0.0.1366.768" timestamp="1605020152691" />
+    <state x="893" y="275" key="Github.ShareDialog" timestamp="1605018218775">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="893" y="275" key="Github.ShareDialog/0.0.1366.768@0.0.1366.768" timestamp="1605018218775" />
+    <state x="797" y="75" key="Github.UntrackedFilesDialog" timestamp="1605018232214">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="797" y="75" key="Github.UntrackedFilesDialog/0.0.1366.768@0.0.1366.768" timestamp="1605018232214" />
     <state width="639" height="185" key="GridCell.Tab.0.bottom" timestamp="1605016851998">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
@@ -199,5 +244,13 @@
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="368" y="22" key="SettingsEditor/0.0.1366.768@0.0.1366.768" timestamp="1605018180899" />
+    <state width="498" height="446" key="SwitcherDM" timestamp="1605023848086">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state width="498" height="446" key="SwitcherDM/0.0.1366.768@0.0.1366.768" timestamp="1605023848086" />
+    <state x="687" y="89" width="672" height="678" key="search.everywhere.popup" timestamp="1605022567576">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="687" y="89" width="672" height="678" key="search.everywhere.popup/0.0.1366.768@0.0.1366.768" timestamp="1605022567576" />
   </component>
 </project>
